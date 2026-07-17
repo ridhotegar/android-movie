@@ -41,8 +41,8 @@ class TrailerAdapter(
             }
             Glide.with(binding.root.context)
                 .load(thumbnailUrl)
-                .placeholder(R.drawable.ic_launcher_background)
-                .error(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.placeholder_image)
+                .error(R.drawable.placeholder_image)
                 .into(binding.ivTrailerThumbnail)
 
             binding.root.setOnClickListener {

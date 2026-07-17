@@ -23,7 +23,7 @@
             android:layout_height="40dp"
             android:contentDescription="Reviewer avatar"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/placeholder_circle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

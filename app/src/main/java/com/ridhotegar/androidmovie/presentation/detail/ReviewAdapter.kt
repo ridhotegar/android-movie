@@ -63,7 +63,8 @@ class ReviewAdapter(
 
             Glide.with(binding.root.context)
                 .load(avatarUrl)
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.placeholder_circle)
+                .error(R.drawable.placeholder_circle)
                 .circleCrop()
                 .into(binding.ivReviewAvatar)
 

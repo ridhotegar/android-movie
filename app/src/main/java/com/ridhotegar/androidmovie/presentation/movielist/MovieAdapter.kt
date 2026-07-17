@@ -90,8 +90,8 @@ class MovieAdapter(
             }
             Glide.with(binding.root.context)
                 .load(posterUrl)
-                .placeholder(R.drawable.ic_launcher_background)
-                .error(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.placeholder_image)
+                .error(R.drawable.placeholder_image)
                 .into(binding.ivMoviePoster)
 
             binding.root.setOnClickListener {

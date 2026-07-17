@@ -127,8 +127,8 @@ class MovieDetailFragment : Fragment() {
         }
         Glide.with(this)
             .load(backdropUrl)
-            .placeholder(R.drawable.ic_launcher_background)
-            .error(R.drawable.ic_launcher_background)
+            .placeholder(R.drawable.placeholder_image)
+            .error(R.drawable.placeholder_image)
             .into(binding.ivBackdrop)
 
         val posterUrl = detail.posterPath?.let {
@@ -136,8 +136,8 @@ class MovieDetailFragment : Fragment() {
         }
         Glide.with(this)
             .load(posterUrl)
-            .placeholder(R.drawable.ic_launcher_background)
-            .error(R.drawable.ic_launcher_background)
+            .placeholder(R.drawable.placeholder_image)
+            .error(R.drawable.placeholder_image)
             .into(binding.ivPoster)
 
         binding.tvTitle.text = detail.title
