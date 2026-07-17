@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/genreFragment">
+
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.ridhotegar.androidmovie.presentation.genre.GenreFragment"
+        android:label="Movie Genres"
+        tools:layout="@layout/fragment_genre">
+        <action
+            android:id="@+id/action_genre_to_movie_list"
+            app:destination="@id/movieListFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.ridhotegar.androidmovie.presentation.movielist.MovieListFragment"
+        android:label="Movies"
+        tools:layout="@layout/fragment_movie_list">
+        <argument
+            android:name="genre_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="genre_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_movie_list_to_detail"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.ridhotegar.androidmovie.presentation.detail.MovieDetailFragment"
+        android:label="Movie Detail"
+        tools:layout="@layout/fragment_movie_detail">
+        <argument
+            android:name="movie_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="movie_title"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="movie_poster"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+</navigation>

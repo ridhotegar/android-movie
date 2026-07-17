@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Android Movie</string>
+    <string name="title_genres">Movie Genres</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="label_rating">Rating</string>
+    <string name="label_runtime">Runtime</string>
+    <string name="label_release_date">Release</string>
+    <string name="label_genres">Genres</string>
+    <string name="label_languages">Languages</string>
+    <string name="label_status">Status</string>
+    <string name="label_budget">Budget</string>
+    <string name="label_revenue">Revenue</string>
+    <string name="label_overview">Overview</string>
+    <string name="label_trailers">Trailers &amp; Videos</string>
+    <string name="label_reviews">User Reviews</string>
+    <string name="label_votes">votes</string>
+    <string name="label_visit_homepage">Visit Homepage</string>
+    <string name="label_retry">Retry</string>
+    <string name="error_loading_genres">Failed to load genres</string>
+    <string name="error_loading_movies">Failed to load movies</string>
+    <string name="error_loading_detail">Failed to load movie details</string>
+    <string name="error_no_genres">No genres available</string>
+    <string name="error_no_movies">No movies found</string>
+    <string name="error_no_reviews">No reviews yet</string>
+    <string name="error_no_trailers">No trailers available</string>
+    <string name="error_network">Network error. Please check your connection.</string>
 </resources>
